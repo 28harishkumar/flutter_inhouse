@@ -1,0 +1,24 @@
+TryInhouse Android SDK Distribution
+==================================
+
+Build Date: Wed Aug 20 17:37:09 IST 2025
+Build Host: harishMac-2.local
+Git Commit: 9d0ba0be48d600e90caab871bcb71b556320611f
+Git Branch: master
+
+SDK Version: 1.0.0
+Minimum Android SDK: 24
+Target Android SDK: 36
+Compile SDK: 36
+
+Dependencies:
+- OkHttp: 4.12.0
+- Gson: 2.10.1
+- Install Referrer: 2.2
+- Kotlin Coroutines: 1.7.3
+- Thumbmark Android: 1.0.+
+
+Artifacts:
+- client-release.aar (64K)
+- client-javadoc.jar (480K)
+- client-sources.jar (16K)
