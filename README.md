@@ -293,4 +293,4 @@ For support and questions, please contact [support@tryinhouse.com](mailto:suppor
 
 - [TryInhouse Website](https://tryinhouse.com)
 - [Documentation](https://docs.tryinhouse.com)
-- [GitHub Repository](https://github.com/28harishkumar/flutter-inhouse-sdk)
+- [GitHub Repository](https://github.com/28harishkumar/flutter_inhouse)
