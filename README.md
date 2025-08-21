@@ -20,7 +20,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_inhouse: ^1.0.0
+  flutter_inhouse: ^1.0.1
 ```
 
 Then run:
@@ -287,10 +287,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support and questions, please contact [support@tryinhouse.com](mailto:support@tryinhouse.com).
+For support and questions, please contact [support@tryinhouse.co](mailto:support@tryinhouse.co).
 
 ## Links
 
-- [TryInhouse Website](https://tryinhouse.com)
-- [Documentation](https://docs.tryinhouse.com)
+- [TryInhouse Website](https://tryinhouse.co)
+- [Documentation](https://docs.tryinhouse.co)
 - [GitHub Repository](https://github.com/28harishkumar/flutter_inhouse)
