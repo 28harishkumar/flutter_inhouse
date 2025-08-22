@@ -197,8 +197,8 @@ class FlutterInhousePlugin: FlutterPlugin, MethodCallHandler, EventChannel.Strea
                 return
             }
             
-            val fingerprint = Thumbmark.getFingerprint(context)
-            result.success(fingerprint ?: "")
+            val fingerprint = Thumbmark.fingerprint(context)
+            result.success(fingerprint?.toString() ?: "")
         } catch (e: Exception) {
             Log.e("FlutterInhousePlugin", "Error getting fingerprint", e)
             result.success("")
@@ -215,9 +215,9 @@ class FlutterInhousePlugin: FlutterPlugin, MethodCallHandler, EventChannel.Strea
             
             val algorithm = call.argument<String>("algorithm")
             val fingerprintId = if (algorithm != null) {
-                Thumbmark.getFingerprintId(context, algorithm)
+                Thumbmark.id(algorithm, context)
             } else {
-                Thumbmark.getFingerprintId(context)
+                Thumbmark.id(context)
             }
             result.success(fingerprintId ?: "")
         } catch (e: Exception) {

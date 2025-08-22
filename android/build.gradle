@@ -83,5 +83,5 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${appcompatVersion}"
 
     // Thumbmark Android (device fingerprint)
-    implementation 'com.github.thumbmarkjs:thumbmark-android:1.0.+'
+    implementation 'com.github.thumbmarkjs:thumbmark-android:1.0.0'
 } 
