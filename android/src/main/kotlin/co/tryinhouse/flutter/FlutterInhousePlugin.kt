@@ -215,7 +215,7 @@ class FlutterInhousePlugin: FlutterPlugin, MethodCallHandler, EventChannel.Strea
             
             val algorithm = call.argument<String>("algorithm")
             val fingerprintId = if (algorithm != null) {
-                Thumbmark.id(algorithm, context)
+                Thumbmark.id(context, algorithm)
             } else {
                 Thumbmark.id(context)
             }

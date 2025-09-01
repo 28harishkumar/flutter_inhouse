@@ -59,11 +59,6 @@ repositories {
 }
 
 dependencies {
-    // Use the extracted JAR from client AAR
-    implementation files('libs/classes.jar')
-    // Include other JAR files but exclude AAR from fileTree  
-    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['*.aar', 'classes.jar'])
-    
     // Make dependencies configurable - use project versions when available
     def okhttpVersion = rootProject.hasProperty('okhttpVersion') ? rootProject.ext.okhttpVersion : '4.12.0'
     def gsonVersion = rootProject.hasProperty('gsonVersion') ? rootProject.ext.gsonVersion : '2.10.1'
@@ -75,6 +70,11 @@ dependencies {
     // Use Kotlin stdlib from the project's version if available
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.hasProperty('kotlinVersion') ? rootProject.ext.kotlinVersion : '1.8.0'}"
     
+    // Use the extracted JAR from client AAR
+    implementation files('libs/classes.jar')
+    // Include other JAR files but exclude AAR from fileTree  
+    implementation fileTree(dir: 'libs', include: ['*.jar'], exclude: ['*.aar', 'classes.jar'])
+    
     implementation "com.squareup.okhttp3:okhttp:${okhttpVersion}"
     implementation "com.google.code.gson:gson:${gsonVersion}"
     implementation "com.android.installreferrer:installreferrer:${installReferrerVersion}"
@@ -83,5 +83,5 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${appcompatVersion}"
 
     // Thumbmark Android (device fingerprint)
-    implementation 'com.github.thumbmarkjs:thumbmark-android:1.0.0'
+    implementation 'com.github.thumbmarkjs:thumbmark-android:1.0.+'
 } 

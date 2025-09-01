@@ -1,6 +1,6 @@
 name: flutter_inhouse
 description: A Flutter plugin for tracking app installs, sessions, and user interactions with shortlinks and deep links using the TryInhouse SDK.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/28harishkumar/flutter-inhouse-sdk
 repository: https://github.com/28harishkumar/flutter-inhouse-sdk
 

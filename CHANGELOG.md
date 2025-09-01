@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Fixed aar bugs for android by including jar files instead
+
 ## 1.0.2
 
 - Fixed thumbmark-android dependency resolution issue by specifying exact version (1.0.0)
